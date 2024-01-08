@@ -1,16 +1,17 @@
 package com.CarlaAntonini;
 
-public class Pelicula {
+public class Pelicula extends MaterialAudiovisual{
     // ATRIBUTOS
-    private String tituloPelicula;
-    private String generoPelicula;
-    private String creadorPelicula;
+    //private String tituloPelicula;
+    //private String generoPelicula;
+    //private String creadorPelicula;
     private int anioDeEstreno;
-    private int duracionPelicula;
-    private boolean visto;
+    //private int duracionPelicula;
+    //private boolean visto;
 
     // CONSTRUCTOR POR DEFAULT
-    public Pelicula() {
+
+    /*public Pelicula() {
         // Coloco valores por default para los atributos
         this.tituloPelicula = "";
         this.generoPelicula = "";
@@ -18,24 +19,49 @@ public class Pelicula {
         this.anioDeEstreno = 0;
         this.duracionPelicula = 0;
         this.visto = false;
+    }*/
+
+    public Pelicula() {
+        super();
+        this.anioDeEstreno = 0;
     }
 
     // CONSTRUCTOR DE TITULO Y CREADOR
 
-    public Pelicula(String tituloPelicula, String creadorPelicula) {
+    /*public Pelicula(String tituloPelicula, String creadorPelicula) {
         this(); // Llama al constructor default para inicializar los demás atributos
         this.tituloPelicula = tituloPelicula;
         this.creadorPelicula = creadorPelicula;
+    }*/
+    public Pelicula(String titulo, String creador) {
+        // Llama al constructor de la superclase para inicializar atributos comunes
+        super();
+        this.setTitulo(titulo);
+        this.setCreador(creador);
+        this.anioDeEstreno = 0;
     }
 
-    public Pelicula(String tituloPelicula, String generoPelicula, String creadorPelicula, int anioDeEstreno, int duracionPelicula) {
+   /* public Pelicula(String tituloPelicula, String generoPelicula, String creadorPelicula, int anioDeEstreno, int duracionPelicula) {
         this(tituloPelicula, creadorPelicula); // Llama al constructor con titulo y creador para inicializando los atributos del constructor previo
         this.generoPelicula = generoPelicula;
         this.anioDeEstreno = anioDeEstreno;
         this.duracionPelicula = duracionPelicula;
+    }*/
+
+    public Pelicula(String titulo, int anioDeEstreno, String genero, String creador, int duracion) {
+        // Llama al constructor de la superclase para inicializar atributos comunes
+        super();
+        this.setTitulo(titulo);
+        this.anioDeEstreno = anioDeEstreno;
+        this.setGenero(genero);
+        this.setCreador(creador);
+        this.setDuracion(duracion);
     }
 
-    public String getTituloPelicula() {
+
+
+
+    /*public String getTituloPelicula() {
         return tituloPelicula;
     }
 
@@ -73,10 +99,11 @@ public class Pelicula {
 
     public void setDuracionPelicula(int duracionPelicula) {
         this.duracionPelicula = duracionPelicula;
-    }
+    }*/
+
 
     // MÉTODO toString sobrescrito
-    @Override
+   /* @Override
     public String toString() {
         return "Pelicula{" +
                 "titulo='" + tituloPelicula + '\'' +
@@ -86,6 +113,23 @@ public class Pelicula {
                 ", duracion=" + duracionPelicula +
                 ", visto=" + visto +
                 '}';
+    }*/
+
+    // GETTER Y SETTER NECESARIO PORQUE NO SE HEREDA
+
+    // Getter y Setter para anioDeEstreno
+    public int getAnioDeEstreno() {
+        return anioDeEstreno;
+    }
+
+    public void setAnioDeEstreno(int anioDeEstreno) {
+        this.anioDeEstreno= anioDeEstreno;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", anioDeEstreno=" + anioDeEstreno;
     }
 
 }
