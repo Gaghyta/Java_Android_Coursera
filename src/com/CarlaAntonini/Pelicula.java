@@ -35,4 +35,43 @@ public class Pelicula {
         this.duracionPelicula = duracionPelicula;
     }
 
+    public String getTituloPelicula() {
+        return tituloPelicula;
+    }
+
+    public void setTituloPelicula(String tituloPelicula) {
+        this.tituloPelicula = tituloPelicula;
+    }
+
+    public String getGeneroPelicula() {
+        return generoPelicula;
+    }
+
+    public void setGeneroPelicula(String generoPelicula) {
+        this.generoPelicula = generoPelicula;
+    }
+
+    public String getCreadorPelicula() {
+        return creadorPelicula;
+    }
+
+    public void setCreadorPelicula(String creadorPelicula) {
+        this.creadorPelicula = creadorPelicula;
+    }
+
+    public int getAnioDeEstreno() {
+        return anioDeEstreno;
+    }
+
+    public void setAnioDeEstreno(int anioDeEstreno) {
+        this.anioDeEstreno = anioDeEstreno;
+    }
+
+    public int getDuracionPelicula() {
+        return duracionPelicula;
+    }
+
+    public void setDuracionPelicula(int duracionPelicula) {
+        this.duracionPelicula = duracionPelicula;
+    }
 }
