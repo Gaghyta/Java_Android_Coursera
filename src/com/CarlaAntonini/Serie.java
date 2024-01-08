@@ -50,4 +50,44 @@ public class Serie {
                 ", duracionSerie=" + duracionSerie +
                 '}';
     }
+
+    public String getTituloSerie() {
+        return tituloSerie;
+    }
+
+    public void setTituloSerie(String tituloSerie) {
+        this.tituloSerie = tituloSerie;
+    }
+
+    public int getNumeroDeTemporadas() {
+        return numeroDeTemporadas;
+    }
+
+    public void setNumeroDeTemporadas(int numeroDeTemporadas) {
+        this.numeroDeTemporadas = numeroDeTemporadas;
+    }
+
+    public String getGeneroSerie() {
+        return generoSerie;
+    }
+
+    public void setGeneroSerie(String generoSerie) {
+        this.generoSerie = generoSerie;
+    }
+
+    public String getCreadorSerie() {
+        return creadorSerie;
+    }
+
+    public void setCreadorSerie(String creadorSerie) {
+        this.creadorSerie = creadorSerie;
+    }
+
+    public int getDuracionSerie() {
+        return duracionSerie;
+    }
+
+    public void setDuracionSerie(int duracionSerie) {
+        this.duracionSerie = duracionSerie;
+    }
 }
