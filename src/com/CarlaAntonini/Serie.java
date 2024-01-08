@@ -38,19 +38,6 @@ public class Serie {
         this.duracionSerie = duracionSerie;
     }
 
-    //METODO TOSTRING SOBREESCRITO
-    @Override
-    public String toString() {
-        return "Serie{" +
-                "tituloSerie='" + tituloSerie + '\'' +
-                ", numeroDeTemporadas=" + numeroDeTemporadas +
-                ", visto=" + visto +
-                ", generoSerie='" + generoSerie + '\'' +
-                ", creadorSerie='" + creadorSerie + '\'' +
-                ", duracionSerie=" + duracionSerie +
-                '}';
-    }
-
     public String getTituloSerie() {
         return tituloSerie;
     }
@@ -90,4 +77,18 @@ public class Serie {
     public void setDuracionSerie(int duracionSerie) {
         this.duracionSerie = duracionSerie;
     }
+
+    //METODO TOSTRING SOBREESCRITO
+    @Override
+    public String toString() {
+        return "Serie{" +
+                "tituloSerie='" + tituloSerie + '\'' +
+                ", numeroDeTemporadas=" + numeroDeTemporadas +
+                ", visto=" + visto +
+                ", generoSerie='" + generoSerie + '\'' +
+                ", creadorSerie='" + creadorSerie + '\'' +
+                ", duracionSerie=" + duracionSerie +
+                '}';
+    }
+
 }
