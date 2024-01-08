@@ -74,4 +74,18 @@ public class Pelicula {
     public void setDuracionPelicula(int duracionPelicula) {
         this.duracionPelicula = duracionPelicula;
     }
+
+    // MÉTODO toString sobrescrito
+    @Override
+    public String toString() {
+        return "Pelicula{" +
+                "titulo='" + tituloPelicula + '\'' +
+                ", genero='" + generoPelicula + '\'' +
+                ", creador='" + creadorPelicula + '\'' +
+                ", año=" + anioDeEstreno +
+                ", duracion=" + duracionPelicula +
+                ", visto=" + visto +
+                '}';
+    }
+
 }
