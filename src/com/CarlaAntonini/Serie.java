@@ -37,4 +37,17 @@ public class Serie {
         this.generoSerie = generoSerie;
         this.duracionSerie = duracionSerie;
     }
+
+    //METODO TOSTRING SOBREESCRITO
+    @Override
+    public String toString() {
+        return "Serie{" +
+                "tituloSerie='" + tituloSerie + '\'' +
+                ", numeroDeTemporadas=" + numeroDeTemporadas +
+                ", visto=" + visto +
+                ", generoSerie='" + generoSerie + '\'' +
+                ", creadorSerie='" + creadorSerie + '\'' +
+                ", duracionSerie=" + duracionSerie +
+                '}';
+    }
 }
