@@ -1,13 +1,15 @@
 package com.CarlaAntonini;
 
-public class MaterialAudiovisual implements Visualizable {
+public abstract class MaterialAudiovisual implements Visualizable {
 
     // ATRIBUTOS GENERALES
     private String titulo;
-    private boolean visto;
     private String genero;
     private String creador;
     private int duracion;
+    private boolean visto;
+
+
 
     @Override
     public String toString() {
