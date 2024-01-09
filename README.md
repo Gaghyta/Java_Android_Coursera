@@ -1,6 +1,6 @@
 TAREA JAVA ANDROID PARA LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MEXICO
 
-
+## PRIMERA TAREA
 Desarrollar un código de Java siguiendo los pasos a continuación:
 
 Crea una clase llamada Pelicula con las siguientes características:
@@ -153,4 +153,11 @@ Crea una clase llamada Pelicula con las siguientes características:
      • Por último, indica la serie con más temporadas y la película del año más reciente.            Muéstralos en pantalla con toda su información (usa el método toString()).
 
 
+## TERCERA TAREA
+
+Para completar la tarea:
+
+Utiliza el programa anterior para implementar la clase ArrayList en lugar de manejar el Arreglo de Objetos. 
+
+Analiza el programa para cachar posibles eventos inesperados que pudieran ocurrir durante el programa e implementa las Excepciones necesarias. 
 
