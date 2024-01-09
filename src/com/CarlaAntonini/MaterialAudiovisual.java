@@ -10,6 +10,17 @@ public class MaterialAudiovisual implements Visualizable {
     private int duracion;
 
     @Override
+    public String toString() {
+        return "MaterialAudiovisual{" +
+                "titulo='" + titulo + '\'' +
+                ", genero='" + genero + '\'' +
+                ", creador='" + creador + '\'' +
+                ", duracion=" + duracion +
+                ", visto=" + visto +
+                '}';
+    }
+
+    @Override
     public void marcarVisto() {
         this.visto = true;
     }
