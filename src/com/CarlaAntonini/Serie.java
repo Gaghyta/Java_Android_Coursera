@@ -29,6 +29,8 @@ public class Serie extends MaterialAudiovisual {
         this.tituloSerie = tituloSerie;
         this.creadorSerie = creadorSerie;
     }*/
+
+
     public Serie() {
       super();
         this.numeroDeTemporadas = 1;
